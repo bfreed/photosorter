@@ -16,3 +16,31 @@ A friendly nod to history
 I coined the phrase "PhotoSorter" at Katapult Engineering (www.katapultengineering.com) for a QGIS plugin that started with the same capabilities as this plugin, then grew to include much more. However, that version: a) is fundamentally about collecting utility poles and wires and could not be easily generalized, b) is no longer called "PhotoSorter" but is a small part of a differently-named plugin used internally, and c) is not publicly available.
 
 This plugin will be written from scratch and will share no code with the previous one, so no attribution is necessary. I mention it nonetheless because if you happen to be planning to inventory utility poles, you should stop reading now and immediately call Katapult. The goal of this plugin is to be generally useful -- it will never be as efficient as Katapult's internal tools at the same narrow problem set they solve.
+
+The plan
+========
+I will build this plugin in stages. While I'd like to say I'll develop & maintain it forever, I am a workaholic who fails at "side projects". Realistically, development will continue until it meets my goals or until I am gainfully employed somewhere else, whichever happens first.
+
+Stage 1 "basically helpful" goals:
+- create image thumbnails, display them in filename order (format SD cards before starting!)
+- allow a selected group of photos to be assigned to a point object on the map
+- will require Spatialite database with "nodes" and "node_photos" tables
+- will store full paths in node_photos table
+
+Stage 2 "very helpful" goals:
+- read date taken and GPS from EXIF data
+- display thumbs in the order taken (regardless of filename numbering rollover)
+- display embedded GPS (if any) on the map canvas
+
+Stage 3 "multiple camera" goals:
+- given multiple cameras that each took a photo of the same clock (the "sync" photo):
+- correct for differences in camera device clocks
+- display images from the directories feathered together, in order of (corrected) time taken
+
+Stage 4 goals "basic options":
+- allow user-specified table names
+- allow choice of full path, relative path, or filename-only 
+
+Unlikely but possible:
+- support data formats other than Spatialite
+- easy export node data & filenames to CSV (Spatialite-GUI does this, but requires building from source for Linux or Mac OS)
