@@ -32,15 +32,16 @@ Stage 2 "very helpful" goals:
 - display thumbs in the order taken (regardless of filename numbering rollover)
 - display embedded GPS (if any) on the map canvas
 
-Stage 3 "multiple camera" goals:
+Stage 3 "basic options" goals:
+- allow user-specified table names
+- allow choice of full path, relative path, or filename-only 
+
+Stage 4 "multiple camera" goals:
 - given multiple cameras that each took a photo of the same clock (the "sync" photo):
 - correct for differences in camera device clocks
 - display images from the directories feathered together, in order of (corrected) time taken
 
-Stage 4 goals "basic options":
-- allow user-specified table names
-- allow choice of full path, relative path, or filename-only 
-
-Unlikely but possible:
+Unlikely but conceivable:
 - support data formats other than Spatialite
-- easy export node data & filenames to CSV (Spatialite-GUI does this, but requires building from source for Linux or Mac OS)
+- export node data & filenames to CSV (Spatialite-GUI does this, but requires building from source for Linux or Mac OS)
+- package project into KML/KMZ with embedded image links, for consumption in Google Earth
