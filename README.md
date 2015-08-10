@@ -19,7 +19,7 @@ This plugin will be written from scratch and will share no code with the previou
 
 The plan
 ========
-I will build this plugin in stages. While I'd like to say I'll develop & maintain it forever, I am a workaholic who fails at "side projects". Realistically, development will continue until it meets my goals or until I am gainfully employed somewhere else, whichever happens first.
+I will build this plugin in stages. While I'd like to say I'll develop & maintain it forever, I won't. Realistically, development will continue until it meets my goals or until I am gainfully employed somewhere else, whichever happens first.
 **UPDATE: gainful employment happened first. This project never started and probably never will.**
 
 Stage 1 "basically helpful" goals:
